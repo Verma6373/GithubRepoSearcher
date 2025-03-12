@@ -1,8 +1,8 @@
-#GitHub Repository Searcher
+# GitHub Repository Searcher
 
 This is a Spring Boot application that allows users to search for GitHub repositories using the GitHub REST API. The application stores search results in a PostgreSQL database and provides API endpoints to retrieve stored results based on filter criteria.
 
-Features
+## Features
 Search GitHub repositories by name, programming language, and sort criteria (stars, forks, or updated date).
 
 Store repository details in a PostgreSQL database.
@@ -11,7 +11,7 @@ Retrieve stored repository details with optional filters (language, minimum star
 
 Handle edge cases such as invalid API responses, rate limits, and empty search results.
 
-Technologies Used
+## Technologies Used
 Spring Boot: Backend framework for building the application.
 
 PostgreSQL: Database for storing repository details.
@@ -22,7 +22,7 @@ JUnit: For unit and integration testing.
 
 Swagger/OpenAPI: For API documentation.
 
-Prerequisites
+## Prerequisites
 Before running the application, ensure you have the following installed:
 
 Java 17 or higher
@@ -33,7 +33,7 @@ PostgreSQL
 
 Postman (for testing APIs)
 
-Setup Instructions
+## Setup Instructions
 1. Clone the Repository
 bash
 Copy
@@ -60,7 +60,7 @@ Copy
 mvn spring-boot:run
 The application will start on http://localhost:8080.
 
-API Endpoints
+## API Endpoints
 1. Search GitHub Repositories
 Endpoint: POST /api/github/search
 
@@ -125,7 +125,7 @@ Copy
     }
   ]
 }
-Testing the Application
+## Testing the Application
 1. Unit Tests
 Run the unit tests using the following command:
 
@@ -137,12 +137,12 @@ Use Postman to test the API endpoints.
 
 Import the provided Postman collection (if available) and test the POST /api/github/search and GET /api/github/repositories endpoints.
 
-API Documentation
+## API Documentation
 The application uses Swagger/OpenAPI for API documentation. After running the application, access the Swagger UI at:
 
 Copy
 http://localhost:8080/swagger-ui.html
-Error Handling
+## Error Handling
 The application handles the following edge cases:
 
 Invalid API responses from GitHub.
@@ -151,7 +151,7 @@ Rate limits (GitHub API allows 60 requests per hour for unauthenticated users).
 
 Empty search results.
 
-Contributing
+## Contributing
 If you'd like to contribute to this project, please follow these steps:
 
 Fork the repository.
@@ -160,10 +160,10 @@ Create a new branch for your feature or bugfix.
 
 Submit a pull request with a detailed description of your changes.
 
-License
+## License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-Contact
+## Contact
 For any questions or feedback, please contact:
 
 Shriyansh Verma
