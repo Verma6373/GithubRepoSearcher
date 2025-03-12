@@ -1,4 +1,5 @@
 GitHub Repository Searcher
+
 This is a Spring Boot application that allows users to search for GitHub repositories using the GitHub REST API. The application stores search results in a PostgreSQL database and provides API endpoints to retrieve stored results based on filter criteria.
 
 Features
